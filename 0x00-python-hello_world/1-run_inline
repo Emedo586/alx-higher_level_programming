@@ -1,3 +1,2 @@
 #!/bin/bash
 python3 -c "$PYCODE"
-#bash redirection operator that is used to pass the contents of $PYCODE as standard input to the python3 command.
