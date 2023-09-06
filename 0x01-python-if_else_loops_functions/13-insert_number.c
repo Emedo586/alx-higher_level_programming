@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdlib.h>
 
 /**
  * insert_mode - inserts a number into a singly -linked list
@@ -10,8 +10,8 @@
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-listint_t *node = *head, *new;
-*new = malloc(sizeof(listint_t));
+listint_t *node = *head, *new = malloc(sizeof(listint_t));
+
 if (!new)
 return (NULL);
 
@@ -21,9 +21,9 @@ new->next = NULL;
 if(!node || new->n < node->n)
 {
 new->next = node;
-return (*head = new;);
+return (*head = new);
 }
-while (!node)
+while (node)
 {
 if (!node->next || new->n < node->next->n)
 {
