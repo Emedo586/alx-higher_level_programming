@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#The value 1 assigned to a variable called a
-#The value 2 assigned to a variable called b
+#  The value 1 is assigned to the variable a
+#  The value 2 is assigned to the variable b
 if __name__ == "__main__":
     from add_0 import add
     a = 1
