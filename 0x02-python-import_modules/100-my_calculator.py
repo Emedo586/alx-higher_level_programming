@@ -13,11 +13,11 @@ if __name__ == "__main__":
     # Calculator performing operation
     if operator == '+':
         result = add(a, b)
-    elif operator == '-':       
+    elif operator == '-':
         result = sub(a, b)
-    elif operator == '*':       
+    elif operator == '*':
         result = mul(a, b)
-    elif operator == '/':        
+    elif operatoir == '/':
         result = div(a, b)
     else:
         print("Unknown operator. Available operators: +, -, * and /")
