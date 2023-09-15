@@ -38,14 +38,16 @@ void print_python_bytes(PyObject *p)
 unsigned char j, size;
 PyBytesObject *bytes = (PyBytesObject *)p;
 
-printf("[.] bytes object info \n");
+printf("[.] bytes object info\n");
 if (strcmp(p->ob_type->tp_name, "bytes") != 0)
 {
+/* Print an error message*/
 printf("  [ERROR] Invalid Bytes Object\n");
 return;
 }
 printf("  size: %ld\n", ((PyVarObject *)p)->ob_size);
-printf("  trying string: %s\n", bytes ->ob_sval);
+/* print the string representation of the byte object */
+printf("  trying string: %s\n", bytes->ob_sval);
 
 if (((PyVarObject *)p)->ob_size > 10)
 size = 10;
