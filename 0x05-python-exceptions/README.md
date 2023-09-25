@@ -1,6 +1,6 @@
 ## 0x05-PYTHON-EXCEPTIONS
-
-<Img align="right"alt="Coding"width="400"src=”https://reeborg.ca/docs/ko/_images/random.gif">
+ 
+<img align="center" alt="Coding" width="400" src="https://reeborg.ca/docs/ko/_images/random.gif">
 
 ## Requirements
 
