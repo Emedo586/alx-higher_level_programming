@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-
-def safe_Function(fct, *args):
+def safe_function(fct, *args):
     try:
         result = fct(*args)
         return (result)
