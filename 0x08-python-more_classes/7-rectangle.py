@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Represents a rectangle.
+    """Represent a rectangle.
 
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
@@ -26,20 +26,20 @@ class Rectangle:
 
     @property
     def width(self):
-        """Provides the width of the Rectangle."""
+        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
-        if value < 0:
-            raise ValueError("width must be >= 0")
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
     def height(self):
-        """Provides the height of the Rectangle."""
+        """Get/set the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -69,9 +69,9 @@ class Rectangle:
             return ("")
 
         rect = []
-        for num in range(self.__height):
-            [rect.append('#') for i in range(self.__width)]
-            if num != self.__height - 1:
+        for i in range(self.__height):
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
+            if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
 
@@ -83,4 +83,5 @@ class Rectangle:
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
