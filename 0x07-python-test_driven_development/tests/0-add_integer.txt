@@ -32,7 +32,7 @@ that value is equivalent to using the ``+`` operator.
     -1
 
 
-The function also works with floating-point values.
+The function can also work with floating-point values.
 
 
 ::
@@ -42,7 +42,7 @@ The function also works with floating-point values.
     5
 
 
-Note that floats are casted to ints before addition is performed.
+Take note that floats are casted to ints before addition is performed.
 
 
 ::
