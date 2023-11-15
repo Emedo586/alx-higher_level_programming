@@ -1,5 +1,4 @@
 -- A script that lists all shows, and all genres linked to that show.
-
 SELECT name FROM tv_genres
 WHERE tv_genres.id NOT IN (
       SELECT tv_genres.id FROM tv_genres
