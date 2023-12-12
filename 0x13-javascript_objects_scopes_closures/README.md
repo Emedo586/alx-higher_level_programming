@@ -1,6 +1,6 @@
 # 0x13-JAVASCRIPT_OBJECTS_SCOPES_CLOSURES
 
-<img align="center" alt="Coding" width="400" src="https://th.bing.com/th?id=OIP.AnQgdhLVFfSQEsh4A6nmMQHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.7&pid=3.1&rm=2">
+<img align="center" alt="Coding" width="400" src=">
 
 ## RESOURCES
 Read or watch:
